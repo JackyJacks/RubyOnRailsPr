@@ -4,6 +4,6 @@ class PagesController < ApplicationController
   end
 
   def contacts
-    @text = 'Contacts'
+    
   end
 end

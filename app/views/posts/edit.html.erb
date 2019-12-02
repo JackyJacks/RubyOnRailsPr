@@ -1,4 +1,4 @@
-<h2>Edit Post</h2>
+<h2>Редагувати запис</h2>
 <%= form_for :post, url: post_path(@post), method: :patch do |f| %>
   <% if @post.errors.any? %>
     <% @post.errors.full_messages.each do |msg| %>
@@ -8,14 +8,14 @@
     <% end %>
   <% end %>
   <p>
-    Name <br>
+    Ім'я <br>
     <%= f.text_field(:title, {:class => 'form-control'}) %>
   </p>
   <p>
-    Text <br>
+    Текст <br>
     <%= f.text_area(:body, {:class => 'form-control'}) %>
   </p>
   <p>
-    <%= f.submit({:class => 'btn btn-success'}) %>
+    <%= f.submit("Додати",{:class => 'btn btn-success'}) %>
   </p>
 <% end %>

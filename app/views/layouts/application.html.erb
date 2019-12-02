@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Blog</title>
+    <title>Мій блог</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -17,25 +17,25 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title></title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
         </a>
         <span class="py-2 d-none d-md-inline-block" >
-          <%= link_to "Main", home_path %>
+          <%= link_to "Головна", home_path %>
         </span>
         <span class="py-2 d-none d-md-inline-block" >
-          <%= link_to "Add Posts", new_posts_path %>
+          <%= link_to "Додати запис", new_posts_path %>
         </span>
         <span class="py-2 d-none d-md-inline-block" >
-          <%= link_to "Contacts", contacts_path %>
+          <%= link_to "Контакти", contacts_path %>
         </span>
         <span class="py-2 d-none d-md-inline-block" >
-          <%= link_to "About", about_path %>
+          <%= link_to "Про мене", about_path %>
         </span>
         <% if signed_in? %>
           <span class="py-2 d-none d-md-inline-block" >
-            <%= link_to 'Sign out', sign_out_path, method: :delete, class: "border border-light rounded p-1" %>
+            <%= link_to 'Вийти', sign_out_path, method: :delete, class: "border border-light rounded p-1" %>
           </span>
-          <div class="py-2 d-none d-md-inline-block signed-in-text">Signed in as: <%= current_user.email.split("@")[0] %></div>
+          <div class="py-2 d-none d-md-inline-block signed-in-text">SУвійшов як: <%= current_user.email.split("@")[0] %></div>
         <% else %>
           <span class="py-2 d-none d-md-inline-block" >
-            <%= link_to 'Sign in', sign_in_path, class: "border border-light rounded p-1"%>
+            <%= link_to 'Увійти', sign_in_path, class: "border border-light rounded p-1"%>
           </span>
         <% end %>
 
