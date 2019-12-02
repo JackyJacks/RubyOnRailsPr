@@ -32,7 +32,7 @@
           <span class="py-2 d-none d-md-inline-block" >
             <%= link_to 'Вийти', sign_out_path, method: :delete, class: "border border-light rounded p-1" %>
           </span>
-          <div class="py-2 d-none d-md-inline-block signed-in-text">SУвійшов як: <%= current_user.email.split("@")[0] %></div>
+          <div class="py-2 d-none d-md-inline-block signed-in-text">Увійшов як: <%= current_user.email.split("@")[0] %></div>
         <% else %>
           <span class="py-2 d-none d-md-inline-block" >
             <%= link_to 'Увійти', sign_in_path, class: "border border-light rounded p-1"%>
