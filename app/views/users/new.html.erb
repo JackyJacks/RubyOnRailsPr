@@ -1,0 +1,15 @@
+<div id="clearance" class="sign-up">
+  <h2>Створити аккаунт</h2>
+
+  <div class="mx-auto" style="max-width: 400px;">
+    <%= form_for @user do |form| %>
+      <%= render partial: '/users/form', object: form %>
+
+      <div class="submit-field">
+        <%= form.submit("Створити", {:class => "btn btn-primary btn-block"}) %>
+      </div>
+
+      <p class="text-center pt-2">Маєте аккаунт? <%= link_to "Увійти", sign_in_path %> </p>
+    <% end %>
+  </div>
+</div>
