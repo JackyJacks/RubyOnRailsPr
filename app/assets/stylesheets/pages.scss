@@ -1,3 +1,10 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.page-in-development{
+	background-image: asset-url('development.gif');
+    background-size: cover; 
+    height: 240px;
+    width: 640px;
+    margin: 100px auto 0 auto;
+}

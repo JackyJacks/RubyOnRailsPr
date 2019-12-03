@@ -26,11 +26,5 @@
     color: #fff;
     text-decoration: none;
 }
-.page-in-development{
-	background-image: url('development.gif');
-    background-size: cover; 
-    height: 240px;
-    width: 640px;
-    margin: 100px auto 0 auto;
-}
+
 
